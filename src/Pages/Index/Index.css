@@ -1,0 +1,71 @@
+.Index {
+    text-align: center;
+}
+
+.Index code {
+    background: #FFF3;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.Index p {
+    margin: 0.4rem;
+}
+
+.Index-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .Index-logo {
+        animation: Index-logo-spin infinite 20s linear;
+    }
+}
+
+.Index-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.Index-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9b8e2b;
+    color: white;
+    border-radius: 0.35rem;
+    border: 0px;
+    height: 3rem;
+    width: 10rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: large;
+    text-align: center;
+    line-height: 3rem;
+    cursor: pointer;
+}
+
+.Index-button:hover {
+    background-color: #b7a733;
+}
+
+.Index-button:active {
+    background-color: #796f21;
+}
+
+@keyframes Index-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

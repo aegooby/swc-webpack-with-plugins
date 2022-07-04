@@ -1,0 +1,36 @@
+{
+    "include": ["src/"],
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "es5",
+        "moduleResolution": "node",
+        "jsx": "preserve",
+        "baseUrl": "./",
+        /* paths - import rewriting/resolving */
+        "paths": {
+            "zx/*": ["node_modules/zx/build/*"]
+        },
+        "pretty": true,
+        "noEmit": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "allowJs": true,
+        "checkJs": true,
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "noImplicitAny": true,
+        "types": ["node"],
+        "plugins": [],
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "allowSyntheticDefaultImports": true,
+        "importsNotUsedAsValues": "error"
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "commonjs"
+        }
+    }
+}
